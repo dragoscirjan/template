@@ -3,16 +3,16 @@
 Set of shield/badges explaining where to find more information about the project (i.e. Where to look for unit test reports, where to see code coverage and code scans, etc.). You can find a lot of them on https://shields.io/)
 
 <!-- [![Npm Version](https://img.shields.io/npm/v/frameworks.svg)](https://www.npmjs.com/package/frameworks) -->
-<!-- [![HitCount](http://hits.dwyl.io/glasswingjs/template.svg)](http://hits.dwyl.io/glasswingjs/template) -->
-<!-- [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/glasswingjs/template/issues) -->
+<!-- [![HitCount](http://hits.dwyl.io/dragoscirjan/template.svg)](http://hits.dwyl.io/dragoscirjan/template) -->
+<!-- [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dragoscirjan/template/issues) -->
 
-[![TravisCI](https://travis-ci.org/glasswingjs/template.svg?branch=master)](https://travis-ci.org/glasswingjs/template)
-<!-- [![CircleCI](https://circleci.com/gh/glasswingjs/template.svg?style=shield)](https://circleci.com/gh/glasswingjs/template) -->
+[![TravisCI](https://travis-ci.org/dragoscirjan/template.svg?branch=master)](https://travis-ci.org/dragoscirjan/template)
+<!-- [![CircleCI](https://circleci.com/gh/dragoscirjan/template.svg?style=shield)](https://circleci.com/gh/dragoscirjan/template) -->
 
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=glasswingjs_template&metric=alert_status)](https://sonarcloud.io/dashboard?id=glasswingjs_template) 
- [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=glasswingjs_template&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=glasswingjs_template)
- [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=glasswingjs_template&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=glasswingjs_template)
- [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=glasswingjs_template&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=glasswingjs_template)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=alert_status)](https://sonarcloud.io/dashboard?id=dragoscirjan_template) 
+ [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=dragoscirjan_template)
+ [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=dragoscirjan_template)
+ [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=dragoscirjan_template)
 
 <!--
 [![Donate to this project using Patreon](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://patreon.com/dragoscirjan)
