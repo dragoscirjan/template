@@ -43,6 +43,7 @@ which is also included in
     - [Prereqiusites / Dependencies](#prereqiusites--dependencies)
       - [For Windows](#for-windows)
       - [For Linux](#for-linux)
+      - [Known Issues / Troubleshooting](#known-issues--troubleshooting)
     - [Installation](#installation)
       - [Say what the step will be](#say-what-the-step-will-be)
       - [And repeat](#and-repeat)
@@ -82,6 +83,10 @@ npm install -g node-gyp windows-build-tools
 apt-get install build-essential mono
 npm install -y node-gyp
 ```
+
+#### Known Issues / Troubleshooting
+
+Describe a list of known issues, and how to bypass them.
 
 ### Installation
 
@@ -160,3 +165,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 Small changelog history. The rest should be added to [CHANGELOG.md](CHANGELOG.md).
 
 See here a template for changelogs: https://keepachangelog.com/en/1.0.0/
+
+Also see this tool for automatically generating them: https://www.npmjs.com/package/changelog
