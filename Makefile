@@ -5,6 +5,9 @@ include Makefile.template
 configure: ## Configure and Init the code dependencies
 	@echo "Configure and Init the code dependencies"
 
+docs: ## Generate documentation for the Project
+	@echo "Generate documentation for the Project"
+
 test: ## Run Tests
 	@echo "Run Tests"
 

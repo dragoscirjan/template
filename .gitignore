@@ -1,0 +1,7 @@
+# IDE
+*.code-workspace
+.idea
+
+# Build
+out
+dist
