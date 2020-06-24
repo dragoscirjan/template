@@ -19,3 +19,13 @@ install: ## Install Application
 
 uninstall: ## Uninstall Application
 	@echo 'Uninstall Instructions'
+
+RELEASE_OPTIONS = -Patch -Dry
+release: release-$(SHELL_IS) ## Publish code & mark for release
+
+release-bash:
+	./.scripts/release-tag.sh $(RELEASE_OPTIONS)
+
+release-powershell:
+	$(POWERSHELL) -File ./.scripts/release-tag.ps1 $(RELEASE_OPTIONS)
+

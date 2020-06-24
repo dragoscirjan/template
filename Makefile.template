@@ -34,6 +34,20 @@ else
 endif
 
 #
+# Detect Shell
+#
+SHELL_IS :=
+ifeq ($(SHELL),/bin/bash)
+	SHELL_IS = bash
+else ifeq ($(SHELL),/usr/bin/bash)
+	SHELL_IS = bash
+else ifeq ($(SHELL),/bin/sh)
+	SHELL_IS = bash
+else
+	SHELL_IS = powershell
+endif
+
+#
 # Binaries
 #
 
