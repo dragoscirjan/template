@@ -90,7 +90,7 @@ tokens=( ${tokens[0]//./ } )
 
 # if RC, alpha, beta, dev
 if [ ! -z $rc ]; then
-  rcVersion=$((rcVersion + 1))
+  ((rcVersion++))
   prefix="-rc$rcVersion"
 else
   if [ ! -z $alpha ]; then
