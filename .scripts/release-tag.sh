@@ -117,16 +117,13 @@ if [ ! -z $inc ]; then
     tokens[1]=0
     tokens[2]=0
   fi
-
   if [ ! -z $minor ]; then
     ((tokens[1]++))
     tokens[2]=0
   fi
-
   if [ ! -z $patch ]; then
     ((tokens[2]++))
   fi
-
   version="v${tokens[0]}.${tokens[1]}.${tokens[2]}"
 fi
 
