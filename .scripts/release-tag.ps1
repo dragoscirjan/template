@@ -107,11 +107,10 @@ if ($Inc) {
   if ($Patch) {
     $tokens[2] = [int]$tokens[2] + 1
   }
-  $version = 'v' + ($tokens -Join '.')
 }
 
 # compose version from version and rc/alpha/beta/dev prefix
-$version = $version + $prefix
+$version = 'v' + ($tokens -Join '.') + $prefix
 
 # prepare commit message
 $UserName  = $(git config user.name)
