@@ -26,7 +26,7 @@ scripts:
   - make release RELEASE_OPTIONS="-version v0.0.1 -rc -dry" | grep "v0.0.1-rc1"
   - make release RELEASE_OPTIONS="-version v0.0.1-rc1 -rc -dry" | grep "v0.0.1-rc2"
   - make release RELEASE_OPTIONS="-version v0.0.1 -f -rc -dry" | grep "v0.0.2-rc1"
-  - make release RELEASE_OPTIONS="-version v0.0.1-rc1 -clear -dry" | grep "v0.0.2"
+  - make release RELEASE_OPTIONS="-version v0.0.1-rc1 -clear -dry" | grep "v0.0.1"
 after_script:
   - echo 'all good'
 notifications:

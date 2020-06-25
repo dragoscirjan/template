@@ -7,6 +7,7 @@ param(
   [switch]$Rc,
   [switch]$Alpha,
   [switch]$Beta,
+  [switch]$Clear,
   [switch]$Dry,
   [switch]$F,
   [System.String]$Version = '',
@@ -71,24 +72,26 @@ $tokens = $tokens[0].Split('.')
 $prefix = ''
 
 # if RC, alpha, beta, dev
-if ($Rc) {
-  $RcVersion = [int]$RcVersion + 1
-  $prefix = '-rc' + $RcVersion
-} else {
-  if ($Alpha) {
-    $prefix = '-alpha'
+if (-not $Clear) {
+  if ($Rc) {
+    $RcVersion = [int]$RcVersion + 1
+    $prefix = '-rc' + $RcVersion
   } else {
-    if ($Beta) {
-      $prefix = '-beta'
+    if ($Alpha) {
+      $prefix = '-alpha'
     } else {
-      if ($Dev) {
-        $prefix = '-dev'
+      if ($Beta) {
+        $prefix = '-beta'
+      } else {
+        if ($Dev) {
+          $prefix = '-dev'
+        }
       }
     }
   }
 }
 
-$Inc = (-not $Alpha -and -not $Beta -and -not $Dev -and -not $Rc) -or $F
+$Inc = (-not $Alpha -and -not $Beta -and -not $Dev -and -not $Rc -and -not $Clear) -or $F
 
 # if not rc, alpha, beta, dev or forced, increase version
 if ($Inc) {

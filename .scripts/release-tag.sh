@@ -2,7 +2,7 @@
 
 green="\e[32m"
 red="\e[31m"
-clear="\e[0m"
+reset_color="\e[0m"
 
 # Parse command line options.
 POSITIONAL=()
@@ -52,6 +52,9 @@ if [[ -z $major && -z $minor && -z $patch ]]; then
   patch=true
 fi
 
+# echo [$major] [$minor] [$patch]
+# echo [$alpha] [$beta] [$dev] [$rc] [$clear]
+
 # Force to the root of the project
 pushd "$(dirname $0)/../"
 
@@ -66,7 +69,7 @@ if [[ -z $version && ! -z $versionFile ]]; then
   if [ -f $versionFile ]; then
     version=$(cat $versionFile)
   else
-    echo -e "${red}Version file missing: $versionFile${clear}"
+    echo -e "${red}Version file missing: $versionFile${reset_color}"
     exit 1
   fi
 fi
@@ -89,18 +92,20 @@ fi
 tokens=( ${tokens[0]//./ } )
 
 # if RC, alpha, beta, dev
-if [ ! -z $rc ]; then
-  ((rcVersion++))
-  prefix="-rc$rcVersion"
-else
-  if [ ! -z $alpha ]; then
-    prefix='-alpha'
+if [ -z $clear ]; then
+  if [ ! -z $rc ]; then
+    ((rcVersion++))
+    prefix="-rc$rcVersion"
   else
-    if [ ! -z $beta ]; then
-      prefix='-beta'
+    if [ ! -z $alpha ]; then
+      prefix='-alpha'
     else
-      if [ ! -z $dev ]; then
-        prefix='-dev'
+      if [ ! -z $beta ]; then
+        prefix='-beta'
+      else
+        if [ ! -z $dev ]; then
+          prefix='-dev'
+        fi
       fi
     fi
   fi
@@ -109,6 +114,8 @@ fi
 if [[ ( -z $alpha && -z $beta && -z $dev && -z $rc && -z $clear ) || ! -z $f ]]; then
   inc=1
 fi
+
+# echo [$inc]
 
 # if not rc, alpha, beta, dev or forced, increase version
 if [ ! -z $inc ]; then
@@ -124,11 +131,10 @@ if [ ! -z $inc ]; then
   if [ ! -z $patch ]; then
     ((tokens[2]++))
   fi
-  version="v${tokens[0]}.${tokens[1]}.${tokens[2]}"
 fi
 
 # compose version from version and rc/alpha/beta/dev prefix
-version="${version}${prefix}"
+version="v${tokens[0]}.${tokens[1]}.${tokens[2]}${prefix}"
 
 # prepare commit message
 userName=$(git config user.name)
@@ -137,7 +143,7 @@ message="Version increase to $version by $userName"
 # # If its a dry run, just display the new release version number
 if [ ! -z $dry ]; then
   echo "Tag message: $message"
-  echo -e "${green}Next version: ${version}${clear}"
+  echo -e "${green}Next version: ${version}${reset_color}"
 else
   if [ ! -z $versionFile ]; then
     echo $version > $versionFile
@@ -156,7 +162,7 @@ else
   echo "Push the tag"
   git push --tags origin master
 
-  echo -e "${green}Release tag done: ${version}${clear}"
+  echo -e "${green}Release tag done: ${version}${reset_color}"
 fi
 
 popd
