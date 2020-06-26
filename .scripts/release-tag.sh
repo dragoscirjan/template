@@ -14,7 +14,7 @@ while [[ $# -gt 0 ]]; do
     -major ) major=true; shift;;
     -minor ) minor=true; shift;;
     -patch ) patch=true; shift;;
-    -dev ) patch=true; shift;;
+    -dev ) dev=true; shift;;
     -rc ) rc=true; shift;;
     -alpha ) alpha=true; shift;;
     -beta ) beta=true; shift;;
@@ -92,18 +92,18 @@ fi
 tokens=( ${tokens[0]//./ } )
 
 # if RC, alpha, beta, dev
-if [ -z $clear ]; then
-  if [ ! -z $rc ]; then
+if [[ -z $clear ]]; then
+  if [[ ! -z $rc ]]; then
     ((rcVersion++))
     prefix="-rc$rcVersion"
   else
-    if [ ! -z $alpha ]; then
+    if [[ ! -z $alpha ]]; then
       prefix='-alpha'
     else
-      if [ ! -z $beta ]; then
+      if [[ ! -z $beta ]]; then
         prefix='-beta'
       else
-        if [ ! -z $dev ]; then
+        if [[ ! -z $dev ]]; then
           prefix='-dev'
         fi
       fi
@@ -118,17 +118,17 @@ fi
 # echo [$inc]
 
 # if not rc, alpha, beta, dev or forced, increase version
-if [ ! -z $inc ]; then
-  if [ ! -z $major ]; then
+if [[ ! -z $inc ]]; then
+  if [[ ! -z $major ]]; then
     ((tokens[0]++))
     tokens[1]=0
     tokens[2]=0
   fi
-  if [ ! -z $minor ]; then
+  if [[ ! -z $minor ]]; then
     ((tokens[1]++))
     tokens[2]=0
   fi
-  if [ ! -z $patch ]; then
+  if [[ ! -z $patch ]]; then
     ((tokens[2]++))
   fi
 fi
@@ -141,11 +141,11 @@ userName=$(git config user.name)
 message="Version increase to $version by $userName"
 
 # # If its a dry run, just display the new release version number
-if [ ! -z $dry ]; then
+if [[ ! -z $dry ]]; then
   echo "Tag message: $message"
   echo -e "${green}Next version: ${version}${reset_color}"
 else
-  if [ ! -z $versionFile ]; then
+  if [[ ! -z $versionFile ]]; then
     echo $version > $versionFile
     git add $versionFile
     git commit $versionFile -m "$message"
