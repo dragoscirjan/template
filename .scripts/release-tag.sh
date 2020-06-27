@@ -80,8 +80,8 @@ version=${version:1} # Remove the v in the tag v0.37.10 for example
 
 rcVersion=0
 
-tokens=( ${version//\-/ } )
-pRcVersion=$tokens[1]
+tokens=( ${version//-/ } )
+pRcVersion=${tokens[1]}
 
 # obtain rc version
 if [ ! -z pRcVersion ]; then
