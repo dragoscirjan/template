@@ -18,6 +18,7 @@ while [[ $# -gt 0 ]]; do
     -rc ) rc=true; shift;;
     -alpha ) alpha=true; shift;;
     -beta ) beta=true; shift;;
+    -clear ) clear=true; shift;;
     -dry ) dry=true; shift;;
     -f ) f=true; shift;;
     -version ) version="$2"; shift; shift;;
