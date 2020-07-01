@@ -11,6 +11,7 @@
 [![Donate to this project using Paypal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBP6DEBJDEMV2&source=url)
 
 <img alt="GoLang logo" src="https://github.com/templ-project/generic/blob/master/logo-gnu-icon.svg?raw=true" width="20%" align="right" />
+
 > A Makefile project, extendable for any project type.
 
 ## Getting Started
