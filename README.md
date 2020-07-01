@@ -26,7 +26,7 @@
 [![Buy an item on our wishlist for us](https://img.shields.io/badge/wishlist-donate-yellow.svg)](https://dragoscirjan.me/wishlist)
 -->
 
-<img alt="GoLang logo" src="https://github.com/templ-project/go/blob/master/logo-gnu-icon.svg?raw=true" width="20%" align="right" />
+<img alt="GoLang logo" src="https://github.com/templ-project/generic/blob/master/logo-gnu-icon.svg?raw=true" width="20%" align="right" />
 > A Makefile project, extendable for any project type.
 
 <!--
