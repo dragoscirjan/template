@@ -16,8 +16,8 @@
 
 > **generic** is a template, extendable for any project type that comes into your mind. 
 > 
-> It is composed of a 
-> * [Makefile](Makefile) with targets for configuring, building, testing, installing and uninstalling an application or module.
+> It is composed of
+> * A [Makefile](Makefile) with targets for configuring, building, testing, installing and uninstalling an application or module.
 > * A [release script](.script/release-tag.sh) capable of git tagging your releases (compatible with both *bash* and *powershell*)
 > * A [README](README.md) template to best describe your project
 > * And a set of [templates](.github) used by the most powerful and popular git repository managers on the market.
