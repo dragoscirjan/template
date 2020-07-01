@@ -1,16 +1,16 @@
 # Templ Generic
 
-<!-- [![Npm Version](https://img.shields.io/npm/v/frameworks.svg)](https://www.npmjs.com/package/frameworks) -->
-<!-- [![HitCount](http://hits.dwyl.io/templ-project/generic.svg)](http://hits.dwyl.io/templ-project/generic) -->
-<!-- [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/templ-project/generic/issues) -->
-
+<!-- CI Badges -->
+[![HitCount](http://hits.dwyl.com/templ-project/generic.svg)](http://hits.dwyl.com/templ-project/generic)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/templ-project/generic/issues)
 [![TravisCI](https://travis-ci.org/templ-project/generic.svg?branch=master)](https://travis-ci.org/templ-project/generic)
 <!-- [![CircleCI](https://circleci.com/gh/templ-project/generic.svg?style=shield)](https://circleci.com/gh/templ-project/generic) -->
 
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=alert_status)](https://sonarcloud.io/dashboard?id=dragoscirjan_template) 
+<!-- Sonar Cloud Badges -->
+<!-- [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=alert_status)](https://sonarcloud.io/dashboard?id=dragoscirjan_template) 
  [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=dragoscirjan_template)
  [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=dragoscirjan_template)
- [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=dragoscirjan_template)
+ [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dragoscirjan_template&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=dragoscirjan_template) -->
 
 <!--
 [![Donate to this project using Patreon](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://patreon.com/dragoscirjan)
