@@ -12,7 +12,17 @@
 
 <img alt="GoLang logo" src="https://github.com/templ-project/generic/blob/master/logo-gnu-icon.svg?raw=true" width="20%" align="right" />
 
-> A Makefile project, extendable for any project type.
+> *Any fool can write code that a computer can understand. Good programmers write code that humans can understand.* – Martin Fowler
+
+> **generic** is a template, extendable for any project type that comes into your mind. 
+> 
+> It is composed of a 
+> * `Makefile` with targets for configuring, building, testing, installing and uninstalling an application or module.
+> * A release script capable of git tagging your releases
+> * A README template to best describe your project
+> * And a set of templates used by the most powerful and popular git repository managers on the market.
+> 
+> **generic** is implemented so far by **[templ/go](/templ-project/go)** and **[templ/python](/templ-project/python)**
 
 ## Getting Started
 
@@ -37,9 +47,9 @@ sudo apt-get install git make -y
 brew install make git
 ```
 
-#### Known Issues / Troubleshooting
+<!-- #### Known Issues / Troubleshooting
 
-None for now.
+None for now. -->
 
 ### Installation
 
@@ -86,34 +96,30 @@ Add a set of links to the [issues](/templ-project/generic/issues) page/website, 
 (If the package is public, add licence)
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Changelog
+<!-- ## Changelog
 
 Small changelog history. The rest should be added to [CHANGELOG.md](CHANGELOG.md).
 
 See here a template for changelogs: https://keepachangelog.com/en/1.0.0/
 
-Also see this tool for automatically generating them: https://www.npmjs.com/package/changelog
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Also see this tool for automatically generating them: https://www.npmjs.com/package/changelog -->
 
 > Remove Everything above this line
 
 <hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Project Title
 
@@ -158,7 +164,6 @@ which is also included in
     - [Prereqiusites / Dependencies](#prereqiusites--dependencies)
         - [For Windows](#for-windows)
         - [For Linux/Unix/OSX](#for-linuxunixosx)
-      - [Known Issues / Troubleshooting](#known-issues--troubleshooting)
     - [Installation](#installation)
     - [Development](#development)
     - [Testing](#testing)
@@ -166,13 +171,12 @@ which is also included in
   - [Authors](#authors)
   - [Issues / Support](#issues--support)
   - [License](#license)
-  - [Changelog](#changelog)
 - [Project Title](#project-title)
   - [Getting Started](#getting-started-1)
     - [Prereqiusites / Dependencies](#prereqiusites--dependencies-1)
       - [For Windows](#for-windows-1)
       - [For Linux](#for-linux)
-      - [Known Issues / Troubleshooting](#known-issues--troubleshooting-1)
+      - [Known Issues / Troubleshooting](#known-issues--troubleshooting)
     - [Installation](#installation-1)
       - [Say what the step will be](#say-what-the-step-will-be)
       - [And repeat](#and-repeat)
@@ -185,7 +189,7 @@ which is also included in
   - [Authors](#authors-1)
   - [Issues / Support](#issues--support-1)
   - [License](#license-1)
-  - [Changelog](#changelog-1)
+  - [Changelog](#changelog)
 
 <!-- /TOC -->
 
