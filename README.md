@@ -73,9 +73,8 @@ Adapt `release` directive in your Makefile to fit your needs.
 > `make release` will know how to increment version and create tags on its own.
 
 ## Authors
-* [Dragos Cirjan](mailto:dragos.cirjan@gmail.com) - Initial work - [PurpleBooth](#link-to-change)
 
-See also the list of contributors who participated in this project.
+* [Dragos Cirjan](mailto:dragos.cirjan@gmail.com) - Initial work
 
 ## Issues / Support
 
