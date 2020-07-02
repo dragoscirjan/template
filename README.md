@@ -31,7 +31,7 @@
 ##### For Windows
 
 - Please install [git-scm](https://git-scm.com/download/win) tool.
-- Please install a form of make/cmake
+- Please install a form of make
   - Install [Make for Windows](http://gnuwin32.sourceforge.net/packages/make.htm)
   - Install [make](https://sourceforge.net/projects/ezwinports/files/) from [ezwinports](https://sourceforge.net/projects/ezwinports/files/)
   - Install [chocolatey](https://chocolatey.org/), run `choco install make`
