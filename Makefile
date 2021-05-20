@@ -1,4 +1,4 @@
-include Makefile.template
+include Makefile.include
 
 ## Add your make instructions here
 
